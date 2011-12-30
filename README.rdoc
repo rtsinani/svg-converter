@@ -1,0 +1,4 @@
+= SvgConverter
+
+Converts SVG string into PNG, JPG, PDF using Batik (Java library from http://xmlgraphics.apache.org/batik/)
+
