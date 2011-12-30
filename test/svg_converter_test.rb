@@ -9,7 +9,7 @@ class SvgConverterTest < ActiveSupport::TestCase
     @svg_filename = File.join(current_dir, 'samples/areaspline.svg')
   end
   
-  ['image/png'].each do |mime_type|
+  ['image/png', 'image/jpg', 'application/pdf'].each do |mime_type|
      test "can convert to #{mime_type}" do
        svg = File.new(@svg_filename).readlines
        convertion = SvgConverter::Convertion.new(svg, mime_type, 200)
